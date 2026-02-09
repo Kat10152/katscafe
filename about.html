@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kat's Cafe - About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Kat's Cafe</div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>About Us</h1>
+        </section>
+
+        <section class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Kat's Cafe was founded in 2020 with a simple mission: to create a warm, welcoming space where people could enjoy exceptional coffee and delicious food.</p>
+                <p>What started as a small dream has grown into a beloved community gathering place. We take pride in sourcing the finest ingredients and supporting local suppliers whenever possible.</p>
+
+                <h2>Our Values</h2>
+                <ul>
+                    <li><strong>Quality:</strong> We never compromise on the quality of our ingredients or service.</li>
+                    <li><strong>Community:</strong> We believe in building connections and supporting our local community.</li>
+                    <li><strong>Sustainability:</strong> We're committed to eco-friendly practices and reducing our environmental footprint.</li>
+                </ul>
+            </div>
+
+            <div class="about-image">
+                <img src="public/images/about.jpg" alt="Friendly barista waving behind the counter at Kat's Cafe">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kat's Cafe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
