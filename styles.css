@@ -65,6 +65,7 @@
 [data-theme="dark"] .form-group textarea {
     background-color: var(--color-surface);
     color: var(--color-text);
+    border-color: #3f3f46;
 }
 
 body {
