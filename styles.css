@@ -41,6 +41,32 @@
     --color-gallery-overlay: rgba(30, 0, 20, 0.9);
 }
 
+/* Dark mode overrides — fixes that can't be handled by variables alone */
+[data-theme="dark"] .btn {
+    border: 2px solid var(--color-primary);
+}
+
+[data-theme="dark"] .feature-card,
+[data-theme="dark"] .hours-card,
+[data-theme="dark"] .location-card,
+[data-theme="dark"] .menu-item {
+    border: 1px solid #3f3f46;
+}
+
+[data-theme="dark"] .hours-row {
+    border-bottom-color: #3f3f46;
+}
+
+[data-theme="dark"] .menu-section h2 {
+    border-bottom-color: var(--color-primary);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     line-height: 1.6;
