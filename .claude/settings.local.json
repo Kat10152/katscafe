@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__nanobanana__generate_image",
+      "Bash(winget install:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "nanobanana"
+  ]
+}
