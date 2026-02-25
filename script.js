@@ -11,10 +11,11 @@ function applyTheme(theme) {
     darkToggle.textContent = theme === 'dark' ? '☀' : '☾';
 }
 
-// Sync button icon with whatever theme the <head> script already applied
+// Apply saved preference, or fall back to OS preference if no preference saved
 try {
     const saved = localStorage.getItem('theme');
-    if (saved) applyTheme(saved);
+    const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : null);
+    if (theme) applyTheme(theme);
 } catch (e) {}
 
 darkToggle.addEventListener('click', () => {
